@@ -39,7 +39,7 @@ export default function Srvices() {
             <div className="relative shadow-sm bg-white" key={service.title}>
               {/* image */}
               <div>
-                <img src={service.cover} />
+                <img src={service.cover} alt="the image" />
               </div>
               <div className="text-center space-y-4 p-4 bg-neutral-50 w-[80%] mx-auto relative bottom-10">
                 <h4>{service.title}</h4>

@@ -70,6 +70,7 @@ export default function Footer() {
                   showIcons={showIcons}
                   active={active}
                   toggle={toggle}
+                  key={links.name}
                 />
               ) : (
                 <Link

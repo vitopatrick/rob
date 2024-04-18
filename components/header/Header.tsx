@@ -25,6 +25,7 @@ export default function Header() {
             <Link
               href={link.path}
               className="uppercase hover:border-b-4 transition-all ease-in hover:border-green-700"
+              key={link.name}
             >
               {link.name}
             </Link>
