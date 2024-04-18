@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const services = [
   {
-    url: "/",
+    url: "/daily-comments",
     title: "Daily Comments",
     about:
       "The Robinson Review is a daily brief and succinct commentary on the global capital markets, economic and technical trends both short term and long term.",
@@ -10,7 +10,7 @@ const services = [
       "https://www.robinsonagmarketing.com/wp-content/uploads/2020/09/1.jpg",
   },
   {
-    url: "/",
+    url: "/marketing",
     title: "Futures Trading",
     about:
       "Cash grain/hedging and spreading. Futures call and put options strategies/trading. Breaking news, sudden price movements, basis changes, etc.",
@@ -18,7 +18,7 @@ const services = [
       "https://www.robinsonagmarketing.com/wp-content/uploads/2020/08/1-2.jpg",
   },
   {
-    url: "/",
+    url: "/hedging",
     title: "Hedging",
     about:
       "Managing price risk for your farm, grain marketing. Let us manage your price risk and volatility, provide you with the strategy and insight needed.",

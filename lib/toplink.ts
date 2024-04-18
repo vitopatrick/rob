@@ -25,52 +25,52 @@ export const topLinks = [
       },
     ],
   },
-  {
-    name: "locations",
-    path: "#",
-    sublinks: [
-      {
-        name: "Ohio",
-        path: "/ohio",
-      },
-      {
-        name: "Minnesota",
-        path: "/minnesota",
-      },
-      {
-        name: "Indiana",
-        path: "/indiana",
-      },
-      {
-        name: "Illinois",
-        path: "/illinois",
-      },
-      {
-        name: "Iowa",
-        path: "/iowa",
-      },
-      {
-        name: "Kentucky",
-        path: "/kentucky",
-      },
-      {
-        name: "North Dakota",
-        path: "/north-dakota",
-      },
-      {
-        name: "South Dakota",
-        path: "/south-dakota",
-      },
-      {
-        name: "Michigan",
-        path: "/michigan",
-      },
-      {
-        name: "Nebraska",
-        path: "/nebraska",
-      },
-    ],
-    },
+  // {
+  //   name: "locations",
+  //   path: "#",
+  //   sublinks: [
+  //     {
+  //       name: "Ohio",
+  //       path: "/ohio",
+  //     },
+  //     {
+  //       name: "Minnesota",
+  //       path: "/minnesota",
+  //     },
+  //     {
+  //       name: "Indiana",
+  //       path: "/indiana",
+  //     },
+  //     {
+  //       name: "Illinois",
+  //       path: "/illinois",
+  //     },
+  //     {
+  //       name: "Iowa",
+  //       path: "/iowa",
+  //     },
+  //     {
+  //       name: "Kentucky",
+  //       path: "/kentucky",
+  //     },
+  //     {
+  //       name: "North Dakota",
+  //       path: "/north-dakota",
+  //     },
+  //     {
+  //       name: "South Dakota",
+  //       path: "/south-dakota",
+  //     },
+  //     {
+  //       name: "Michigan",
+  //       path: "/michigan",
+  //     },
+  //     {
+  //       name: "Nebraska",
+  //       path: "/nebraska",
+  //     },
+  //   ],
+  //   },
     {
         name: "About Us",
         path:'about-us'

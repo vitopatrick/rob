@@ -5,9 +5,9 @@ export default function Navigate() {
   return (
     <div className="p-3">
       {/* container */}
-      <div className="w-11/12 mx-auto p-4 flex flex-col lg:flex-row gap-2">
+      <div className="w-11/12 mx-auto p-4 grid grid-cols-1 lg:grid-cols-3 gap-10">
         {/* pictures */}
-        <div className="flex-1 space-y-4">
+        <div className=" space-y-4">
           <img
             src="https://www.robinsonagmarketing.com/wp-content/uploads/2020/10/1-1-1536x2048.jpg"
             alt="first image"
@@ -18,7 +18,7 @@ export default function Navigate() {
           />
         </div>
         {/* write up */}
-        <div className="flex-1 space-y-4">
+        <div className="col-span-2 space-y-4">
           <h3>
             Navigate Volatile Agricultural Markets with Confidence with The
             Latest Commodities Marketing Updates!
