@@ -24,13 +24,16 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from "../ui/alert-dialog";
+import { messageClient } from "@/actions/Message";
+import { toast } from "sonner";
 
-const formSchema = z.object({
+export const formSchema = z.object({
   firstname: z.string().min(2).max(50),
   lastname: z.string().min(2).max(50),
   number: z.string().min(2).max(50),
   email: z.string().min(2).max(50).email(),
-  password: z.string().min(2).max(50),
+  // password: z.string().min(2).max(50),
+  plan: z.string().min(2).max(50),
 });
 
 const methods = [
@@ -57,13 +60,17 @@ export default function SubscribeForm() {
     resolver: zodResolver(formSchema),
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    try {
+      await messageClient(values);
+      toast.success("Request Sent");
+    } catch (error) {
+      toast.error("Sorry Could not connect");
+    }
   }
 
   return (
     <section className="w-11/12 mx-auto p-6">
-      <p>Terms:$399.99/Year</p>
       {/* form */}
       <div>
         <Form {...form}>
@@ -124,7 +131,7 @@ export default function SubscribeForm() {
                 </FormItem>
               )}
             />
-            {/* password */}
+            {/* password
             <FormField
               control={form.control}
               name="password"
@@ -133,6 +140,25 @@ export default function SubscribeForm() {
                   <FormLabel>Password</FormLabel>
                   <FormControl>
                     <Input {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            /> */}
+
+            {/* subscription Model */}
+            <FormField
+              control={form.control}
+              name="plan"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Choose A Subscription Plan</FormLabel>
+                  <FormControl className="block py-3 px-2 rounded-md w-full border border-neutral-300">
+                    <select {...field}>
+                      <option>Weekly $75</option>
+                      <option>Monthly $399</option>
+                      <option>Yearly $1400</option>
+                    </select>
                   </FormControl>
                   <FormMessage />
                 </FormItem>

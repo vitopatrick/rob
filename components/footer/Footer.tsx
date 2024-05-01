@@ -9,15 +9,15 @@ import SubMenu from "../submenu/SubMenu";
 const links = [
   {
     name: "Privacy Policy",
-    path: "/term",
+    path: "/",
   },
   {
     name: "Risk disclaimer",
-    path: "/risk",
+    path: "/",
   },
   {
     name: "Disclaimer",
-    path: "/term",
+    path: "/",
   },
 ];
 
