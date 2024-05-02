@@ -16,7 +16,7 @@ export const Menu = () => {
     <div className="lg:flex gap-4 items-center hidden">
       {topLinks.map((link) =>
         link.sublinks ? (
-          <NavigationMenu className="p-0">
+          <NavigationMenu className="p-0" key={link.name}>
             <NavigationMenuList>
               <NavigationMenuItem>
                 <NavigationMenuTrigger className="text-base ">
