@@ -24,8 +24,8 @@ export const Menu = () => {
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
                   {link.sublinks.map((link) => (
-                    <div className="flex flex-col w-full">
-                      <Link href={link.path} key={link.name} className="p-4">
+                    <div className="flex flex-col w-full" key={link.name}>
+                      <Link href={link.path} className="p-4">
                         {link.name}
                       </Link>
                     </div>
