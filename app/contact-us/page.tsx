@@ -21,7 +21,7 @@ export default function ContactUs() {
             out the form below. Thank you for your interest in The Robinson
             Review.
           </p>
-          <p>312 638 8868</p>
+          <p>904-590-5103</p>
         </div>
         {/* form */}
         <div className="flex-1">
