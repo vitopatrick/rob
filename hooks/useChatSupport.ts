@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-const CHAT_SCRIPT_URL = "//code.jivosite.com/widget/HgmcwUFVXi";
+const CHAT_SCRIPT_URL = "//code.tidio.co/grs4q7oajazzzjh5jg3fcwqccuamwfm7.js";
 
 export const useChatSupport = () => {
   useEffect(() => {
@@ -26,3 +26,4 @@ export const useChatSupport = () => {
     };
   }, []);
 };
+
