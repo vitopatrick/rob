@@ -33,7 +33,8 @@ export const formSchema = z.object({
   number: z.string().min(2).max(50),
   email: z.string().min(2).max(50).email(),
   // password: z.string().min(2).max(50),
-  plan: z.string().min(2).max(50),
+  plan: z.string(),
+  product: z.string(),
 });
 
 const methods = [
@@ -145,6 +146,27 @@ export default function SubscribeForm() {
                 </FormItem>
               )}
             /> */}
+
+            {/* Product i.e choose the product you is subscribing to */}
+            <FormField
+              control={form.control}
+              name="plan"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Select A Product</FormLabel>
+                  <FormControl className="block py-3 px-2 rounded-md w-full border border-neutral-300">
+                    <select {...field}>
+                      <option>AI</option>
+                      <option>Cryptocurrency</option>
+                      <option>Investment Tools</option>
+                      <option>Quant And Research</option>
+                      <option>Trade And Income</option>
+                    </select>
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
 
             {/* subscription Model */}
             <FormField

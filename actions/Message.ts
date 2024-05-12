@@ -39,6 +39,9 @@ export async function messageClient(clientInfo: any | unknown) {
 
             <h4>Plan</h4>
             <p>${clientInfo.plan}</p>
+
+            <h4>Product</h4>
+            <p>${clientInfo.product}</p>
   `,
     });
 

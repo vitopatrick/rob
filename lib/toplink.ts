@@ -8,6 +8,10 @@ export const topLinks = [
     path: "/marketing",
   },
   {
+    name: "Products",
+    path: "/products",
+  },
+  {
     name: "Services",
     path: "#",
     sublinks: [
@@ -140,6 +144,10 @@ export const sideLinks = [
   {
     name: "About Us",
     path: "about-us",
+  },
+  {
+    name: "Products",
+    path: "/products",
   },
   {
     name: "Contact Us",

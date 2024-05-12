@@ -10,8 +10,8 @@ export default function Hero() {
       }}
       className="h-[600px] flex items-center"
     >
-      <div className="bg-white lg:w-[40%] lg:ml-12 mx-auto p-4 space-y-4">
-        <p className="font-semibold text-xl leading-relaxed">
+      <div className="bg-white lg:w-[70%] lg:ml-12 mx-auto p-4 space-y-4">
+        <p className="font-medium text-xl leading-loose">
           The Robinson Review is a daily brief and succinct commentary on the
           global capital markets. It is distributed to subscribers by the end of
           each business day. The review addresses economic and technical trends

@@ -11,7 +11,7 @@ export default function AboutUsPage() {
       <div className="flex w-11/12 mx-auto p-5 gap-4">
         {/* section 1 */}
         <div className="space-y-6">
-          <p>
+          <p className="leading-loose">
             Chris Robinson is a 1988 Graduate of Colgate University, where he
             completed his undergraduate degree in Political Science. While
             there, he was a 4 year member of the Division I Colgate Raider
@@ -19,7 +19,7 @@ export default function AboutUsPage() {
             He was the recipient of the Tom Dodge Unsung Hero award for the 1987
             season.
           </p>
-          <p>
+          <p className="leading-loose">
             Post college, Chris worked for Tenco Futures as a broker’s assistant
             and clerk. This was his first exposure to the cash grain/hedging and
             spreading business which dominated much of the business of the
@@ -39,11 +39,11 @@ export default function AboutUsPage() {
         </div>
         {/* section 2 */}
         <div className="space-y-6">
-          <p>
+          <p className="leading-loose">
             In 1992, Chris became a member of the Chicago Board of Trade and
             traded multiple markets for his own account.
           </p>
-          <p>
+          <p className="leading-loose">
             At the beginning of 2010, Chris joined Mark Gold as a risk manager
             with Top Third AG Marketing. After 9 years with Mark, Chris made the
             move to become and is currently serving as the Managing Director of
@@ -51,7 +51,7 @@ export default function AboutUsPage() {
           </p>
           {/* special */}
           <div className="border-l-4 border-green-500 pl-6">
-            <p className="text-2xl font-semibold  leading-loose">
+            <p className="text-xl font-medium  leading-relaxed">
               As a broker and risk manager, Chris enjoys the opportunity to
               interact with many different producers, end users, as well as
               speculative clients. Each person has different risk/reward
@@ -59,7 +59,7 @@ export default function AboutUsPage() {
               every situation his clients may be facing.
             </p>
           </div>
-          <p>
+          <p className="leading-loose">
             Today, Chris is a regular guest on Fox Business News. He has been a
             fixture on the CME website over the past 5 years as well giving
             daily market commentary and analysis for the grains and equities.
@@ -71,11 +71,17 @@ export default function AboutUsPage() {
             Radio Channel 147, where every Wednesday he is live on TV and again
             after the close on “commodity wrap”. He has also been interviewed on
             other media outlets e.g. Australia’s SKYTV as well as Chinese and
-            Japanese outlets.
+            Japanese outlets. Recently we added more profitable products and
+            services to our network, we joined the AI trends that basically
+            helps in predicting the future of trading and so far we’ve confirmed
+            how amazing this is and its chances to help increase our client’s
+            portfolio. Over the years we’ve been working on inside trades that
+            would benefit our clients and I can testify to how great this
+            project has become.
           </p>
           {/* special */}
           <div className="border-l-4 border-green-500 pl-6">
-            <p className="text-2xl font-semibold  leading-loose">
+            <p className="text-xl font-medium  leading-loose">
               Chris Robinson is a name you can trust when you are looking for
               sound advice from a speculative strategy, to the best hedging
               approach to cover your business risk.

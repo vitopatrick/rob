@@ -14,7 +14,7 @@ export default function GrainConsulting() {
       <div className="bg-black/40 h-full  flex items-center justify-center">
         <div className="flex items-center justify-center flex-col gap-3">
           <h3 className="text-white text-2xl lg:text-4xl">
-            GRAIN CONSULTING AND HEDGING
+            TRADING, CONSULTING AND HEDGING
           </h3>
           <Link
             href="/contact-us"

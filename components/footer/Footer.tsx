@@ -40,8 +40,8 @@ export default function Footer() {
         <div className="flex-1">
           <h2 className="font-semibold uppercase">Contact Us</h2>
           <div className="space-y-5 mt-3">
-            <p>info@Robinsonmarkethub.com</p>
-            <p>Divison of:</p>
+            <p>info@robinsonagmarkethub.com</p>
+            <p>Division of:</p>
             <div>
               <img
                 src="https://www.robinsonagmarketing.com/wp-content/uploads/2020/05/logo.png"

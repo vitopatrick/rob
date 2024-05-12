@@ -7,6 +7,7 @@ import Hero from "@/components/hero/Hero";
 import Navigate from "@/components/home/Navigate/Navigate";
 import Srvices from "@/components/home/our-service/Srvices";
 import { useChatSupport } from "@/hooks/useChatSupport";
+import ProductsTab from "@/components/products-tab/ProductTab";
 
 export default function Home() {
   useChatSupport();
@@ -15,12 +16,23 @@ export default function Home() {
     <>
       {/* hero */}
       <Hero />
-      {/* Services */}
-      <Srvices />
       {/* Grain Consulting */}
       <GrainConsulting />
+      {/* tab */}
+      <div className="mt-4">
+        <h4 className="text-center text-2xl lg:text-3xl font-medium">
+          Innovation Meets Productivity
+        </h4>
+        <p className="text-center mt-1 text-neutral-400">
+          Get Inclined with our various trading products and tools.
+        </p>
+        <ProductsTab />
+      </div>
+      {/* Services */}
+      <Srvices />
+
       {/* Navigate */}
-      <Navigate />
+      {/* <Navigate /> */}
       {/* disclaimer */}
       <Disclaimer />
     </>
