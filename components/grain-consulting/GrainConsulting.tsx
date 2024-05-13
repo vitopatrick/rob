@@ -6,8 +6,9 @@ export default function GrainConsulting() {
     <div
       style={{
         background:
-          "url('https://www.robinsonagmarketing.com/wp-content/uploads/2020/03/grain.jpg')",
+          "url('https://images.pexels.com/photos/210607/pexels-photo-210607.jpeg?auto=compress&cs=tinysrgb&w=800')",
         backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
       }}
       className="h-[400px] relative"
     >

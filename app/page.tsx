@@ -17,7 +17,9 @@ export default function Home() {
       {/* hero */}
       <Hero />
       {/* Grain Consulting */}
-      <GrainConsulting />
+      {/* Services */}
+      <Srvices />
+
       {/* tab */}
       <div className="mt-4">
         <h4 className="text-center text-2xl lg:text-3xl font-medium">
@@ -28,8 +30,7 @@ export default function Home() {
         </p>
         <ProductsTab />
       </div>
-      {/* Services */}
-      <Srvices />
+      <GrainConsulting />
 
       {/* Navigate */}
       {/* <Navigate /> */}
