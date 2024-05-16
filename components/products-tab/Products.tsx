@@ -16,7 +16,7 @@ export default function AllProducts({ category }: IProducts) {
       {!category
         ? products.map((product) => (
             <div key={product.id} className="rounded shadow-sm">
-              <div>
+              <div className="h-3/4">
                 <img src={product.image} alt={product.title} />
               </div>
               <div className="p-3 space-y-3">

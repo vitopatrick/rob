@@ -5,8 +5,7 @@ export default [
     about:
       "Get A.I informed stock predictions at your fingertips with Predictive Alpha. Machine learning flips the traditional script in a powerful way with our proprietary A.I. program known as An-E. An-E has been loaded with over 100 distinct variables into the machine learning program.",
     category: "AI",
-    image:
-      "https://www.robinsonagmarketing.com/wp-content/uploads/2022/06/logo-2.png",
+    image: "/alpha1.jpg",
     link: "/predictive-alpha",
   },
   {
@@ -15,8 +14,7 @@ export default [
     about:
       "Get more from your subscription of Predictive Alpha with Predictive Alpha Prime. You get access to several trades searches. Using our proprietary machine learning tool, An-E, you can put A.I. to work in picking the best time to buy & sell any given stock within 30 days.",
     category: "AI",
-    image:
-      "https://www.robinsonagmarketing.com/wp-content/uploads/2022/06/logo-2.png",
+    image: "/alph2.jpg",
     link: "/predictive-alpha",
   },
   {
@@ -25,18 +23,16 @@ export default [
     about:
       "Predictive Alpha Options brings you the power of our proprietary A.I. program, An-E, but leveraged for options trades. With machine learning variables loaded in specifically to analyze sell and puts, this tool simplifies options-based trading so you can spend more time focusing on doing the things you love.",
     category: "AI",
-    image:
-      "https://www.robinsonagmarketing.com/wp-content/uploads/2022/06/logo-2.png",
+    image: "/alpha3.jpg",
     link: "/predictive-alpha",
   },
   {
     id: 4,
-    title: "TradeStops®",
+    title: "TradeStop®",
     about:
       "Robinson AG ’s flagship investing tool demonstrates why this company has emerged as a fintech leader. Sync your investment portfolios and track the overall health and performance of every stock you own. Learn to trade like an expert—maximizing your gains and keeping what you’ve earned – by taking emotion out of your investing process.",
     category: "investment_tools",
-    image:
-      "https://www.robinsonagmarketing.com/wp-content/uploads/2022/06/logo-2.png",
+    image: "/tradestop.jpg",
     link: "/tools",
   },
   {
@@ -45,8 +41,7 @@ export default [
     about:
       "Find your next favorite investment by letting our algorithms do the work. Use any of our seven proprietary, back-tested strategies to find stock ideas that mesh with your personal investment philosophy and feelings about risk. Then measure them against the others to find the ones with the most opportunities, giving them the highest chance at success.",
     category: "investment_tools",
-    image:
-      "https://www.robinsonagmarketing.com/wp-content/uploads/2022/06/logo-2.png",
+    image: "/ideas.jpg",
     link: "/tools",
   },
   {
@@ -55,8 +50,7 @@ export default [
     about:
       "Combine the best of both worlds with access to all the best tools of TradeStops and Ideas by Robinson AG . You’ll get access to the Pure Quant portfolio builder, the Billionaire’s Club, AND the market health indicators and Ideas lab strategies – all in one convenient package.",
     category: "investment_tools",
-    image:
-      "https://www.robinsonagmarketing.com/wp-content/uploads/2022/06/logo-2.png",
+    image: "/ag360.jpg",
     link: "/tools",
   },
   {
@@ -65,8 +59,7 @@ export default [
     about:
       "Our Ratings tool shows you, at a glance, the overall sentiment about any stock we track based on a compilation of underlying fundamental and technical indicators. From Strong Bullish to Strong Bearish, this easy-to-read indicator can give you extra conviction on any stock you’re considering.",
     category: "investment_tools",
-    image:
-      "https://www.robinsonagmarketing.com/wp-content/uploads/2022/06/logo-2.png",
+    image: "/ratings.jpg",
     link: "/tools",
   },
   {
@@ -75,8 +68,7 @@ export default [
     about:
       "Trade Cycles by AG market hub indicators use our back-tested research to highlight potential entry and exit opportunities based on short-, medium-, long-, and very long-term patterns to help you make investment decisions at the best possible time.",
     category: "trading_income",
-    image:
-      "https://www.robinsonagmarketing.com/wp-content/uploads/2022/06/logo-2.png",
+    image: "/tradecycles.jpg",
     link: "/trading",
   },
   {
@@ -85,8 +77,7 @@ export default [
     about:
       "ake your options trading to the next level with Options360 by Robinson AG. Use pre-built screeners to find options opportunities based on probability of profit, return on investment, and more. Or build your own custom screener to match any strategy you follow.",
     category: "trading_income",
-    image:
-      "https://www.robinsonagmarketing.com/wp-content/uploads/2022/06/logo-2.png",
+    image: "/options350.jpg",
     link: "/trading",
   },
   {
@@ -95,8 +86,7 @@ export default [
     about:
       "Get the top three income options trade ideas from our system emailed to you each month with weekly updates and guidance on how to manage your trade. In its first six months, this system has a track record with a win rate of better than 90%.",
     category: "trading_income",
-    image:
-      "https://www.robinsonagmarketing.com/wp-content/uploads/2022/06/logo-2.png",
+    image: "/loop.jpg",
     link: "/trading",
   },
   {
@@ -105,8 +95,7 @@ export default [
     about:
       "Stay up to date with market fluctuations and keep your portfolio packed with opportunities for growth with Constant Cash Flow. As a subscriber you’ll receive daily income-based options trading updates and ideas. With 365 touch points a year, this tool truly lives up to its name.",
     category: "trading_income",
-    image:
-      "https://www.robinsonagmarketing.com/wp-content/uploads/2022/06/logo-2.png",
+    image: "/constant.jpg",
     link: "/trading",
   },
   {
@@ -115,8 +104,7 @@ export default [
     about:
       "Mike Burnick’s premier trading service with Robinson AG, Ultimate Income lets you “program” your portfolio to deliver payments on the schedule you want, potentially grabbing income in any market environment and supercharging your returns with the capital gains on the stocks he spotlights.",
     category: "trading_income",
-    image:
-      "https://www.robinsonagmarketing.com/wp-content/uploads/2022/06/logo-2.png",
+    image: "/ultimate-money.jpg",
     link: "/trading",
   },
   {
@@ -125,8 +113,7 @@ export default [
     about:
       "Money Movers by Robinson AG market hub tracks where smart money is moving – both in buys and sells – to give users the opportunity to take advantage of movement before most retail investors are aware. Track movement by sectors or individual stocks, using indicators for institutional and insider activity, unusual options activity, and other factors.",
     category: "trading_income",
-    image:
-      "https://www.robinsonagmarketing.com/wp-content/uploads/2022/06/logo-2.png",
+    image: "/money-mover.jpg",
     link: "/trading",
   },
   {
@@ -135,8 +122,7 @@ export default [
     about:
       "Quantum Edge Pro uses quantitative analysis of the best stocks in the market to find the strongest performers – the best of the best – based on fundamental and technical analysis. For extra conviction, we also track Big Money movement on these stocks before the price moves up (or down) in a big way. We combine these quantifiable numbers and give you a proprietary Quantum Score to give you confidence in the investments we recommend.",
     category: "quantum",
-    image:
-      "https://www.robinsonagmarketing.com/wp-content/uploads/2022/06/logo-2.png",
+    image: "/quantum.jpg",
     link: "/quantum",
   },
 ];
