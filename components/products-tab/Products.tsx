@@ -16,8 +16,12 @@ export default function AllProducts({ category }: IProducts) {
       {!category
         ? products.map((product) => (
             <div key={product.id} className="rounded shadow-sm">
-              <div className="h-3/4">
-                <img src={product.image} alt={product.title} />
+              <div className="h-[100px">
+                <img
+                  src={product.image}
+                  alt={product.title}
+                  className="h-full w-full"
+                />
               </div>
               <div className="p-3 space-y-3">
                 <h2 className={cn("font-bold")}>{product.title}</h2>
@@ -33,8 +37,12 @@ export default function AllProducts({ category }: IProducts) {
         : filteredList &&
           filteredList.map((product) => (
             <div key={product.id} className="rounded shadow-sm">
-              <div>
-                <img src={product.image} alt={product.title} />
+              <div className="h-[300px">
+                <img
+                  src={product.image}
+                  alt={product.title}
+                  className="h-full w-full"
+                />
               </div>
               <div className="p-3 space-y-3">
                 <h2 className={cn("font-bold ")}>{product.title}</h2>
