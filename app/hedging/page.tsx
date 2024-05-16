@@ -22,6 +22,11 @@ export default function HedgingPage() {
               <li>Cash Bids</li>
               <li>Profit Calculations</li>
               <li>Hedging Strategy and Program</li>
+              <li>Equities </li>
+              <li>Treasuries </li>
+              <li>Daily stocks </li>
+              <li>Indices</li>
+              <li>EFTs</li>
             </ul>
           </div>
           <div className="flex-1">
