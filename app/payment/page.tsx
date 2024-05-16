@@ -1,7 +1,8 @@
 "use client";
 
 import SubscribeForm from "@/components/SubscribeForm/SubscribeForm";
-import { useParams, useSearchParams } from "next/navigation";
+import { useSearchParams } from "next/navigation";
+import { Suspense } from "react";
 
 const PaymentPage = () => {
   const params = useSearchParams();
@@ -10,7 +11,9 @@ const PaymentPage = () => {
 
   return (
     <div>
-      <SubscribeForm price={price} product={product} />
+      <Suspense>
+        <SubscribeForm price={price} product={product} />
+      </Suspense>
     </div>
   );
 };
