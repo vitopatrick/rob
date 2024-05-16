@@ -104,7 +104,10 @@ export default function SubscribeForm() {
     resolver: zodResolver(formSchema),
   });
 
-  const [selectedCoin, setCoin] = useState<any>();
+  const [value, setValue] = useState<any>("ETH");
+  const [selectedCoin, setCoin] = useState<any>(
+    methods[1].coins?.find((coin) => coin.method === value)
+  );
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     try {
@@ -114,12 +117,6 @@ export default function SubscribeForm() {
       toast.error("Sorry Could not connect");
     }
   }
-
-  const findCoin = (name: string) => {
-    const coinFound = methods[1].coins?.find((coin) => coin.method === name);
-
-    setCoin(coinFound);
-  };
 
   return (
     <>
@@ -274,41 +271,50 @@ export default function SubscribeForm() {
                     <AlertDialogTrigger className=" border-2 px-5 py-3 rounded-lg border-neutral-500 ">
                       {method.method}
                     </AlertDialogTrigger>
-                    <AlertDialogContent>
+                    <AlertDialogContent className="lg:w-full w-[90%] mx-auto flex flex-col ">
                       <AlertDialogHeader>
                         <AlertDialogTitle className="text-center text-2xl ">
                           Select Coin
                         </AlertDialogTitle>
-                        <div className="flex items-center justify-evenly">
-                          {method.coins?.map((coin) => (
-                            <button
-                              key={coin.method}
-                              onClick={() => findCoin(coin.method)}
-                              className={
-                                selectedCoin &&
-                                selectedCoin?.method == coin.method
-                                  ? "bg-red-400 text-white rounded-lg px-4 py-2"
-                                  : ""
+                        <AlertDialogDescription>
+                          <div className="my-3 w-full">
+                            <select
+                              className="bg-neutral-100 p-2 w-full"
+                              value={value}
+                              onChange={(e) =>
+                                setValue(() => {
+                                  setCoin(
+                                    method.coins?.find(
+                                      (coin) => coin.method === e.target.value
+                                    )
+                                  );
+                                })
                               }
                             >
-                              {coin.method}
-                            </button>
-                          ))}
-                        </div>
-                        {selectedCoin && (
-                          <div>
-                            <img
-                              src={selectedCoin.imgUrl}
-                              alt={selectedCoin.method}
-                            />
-                            <p className="font-mono text-center">
-                              {selectedCoin.address}
-                            </p>
-                            <p className="text-center my-4">
-                              {selectedCoin.method}
-                            </p>
+                              {method.coins?.map((coin) => (
+                                <option key={coin.method} value={coin.method}>
+                                  {coin.method}
+                                </option>
+                              ))}
+                            </select>
                           </div>
-                        )}
+                          {selectedCoin && (
+                            <div>
+                              <div className="w-1/2 mx-auto">
+                                <img
+                                  src={selectedCoin.imgUrl}
+                                  alt={selectedCoin.method}
+                                />
+                              </div>
+                              <p className="font-mono text-center line-clamp-2">
+                                {selectedCoin.address}
+                              </p>
+                              <p className="text-center my-4">
+                                {selectedCoin.method}
+                              </p>
+                            </div>
+                          )}
+                        </AlertDialogDescription>
                       </AlertDialogHeader>
                       <AlertDialogFooter>
                         <AlertDialogCancel>Continue</AlertDialogCancel>
@@ -344,4 +350,3 @@ export default function SubscribeForm() {
     </>
   );
 }
-
