@@ -27,6 +27,7 @@ import {
 import { messageClient } from "@/actions/Message";
 import { toast } from "sonner";
 import { ThumbsUp } from "lucide-react";
+import { useSearchParams } from "next/navigation";
 
 export const formSchema = z.object({
   firstname: z.string().min(2).max(50),
@@ -94,7 +95,11 @@ const methods = [
   },
 ];
 
-export default function SubscribeForm({ price, product }: any) {
+export default function SubscribeForm() {
+  const params = useSearchParams();
+  const price = params.get("price");
+  const product = params.get("product");
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
   });
