@@ -10,11 +10,11 @@ const PaymentPage = () => {
   const product = params.get("product");
 
   return (
-    <div>
-      <Suspense>
-        <SubscribeForm price={price} product={product} />
-      </Suspense>
-    </div>
+    <Suspense
+      fallback={<p className="text-neutral-500 text-center">Loading ...</p>}
+    >
+      <SubscribeForm price={price} product={product} />
+    </Suspense>
   );
 };
 
