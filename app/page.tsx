@@ -21,7 +21,7 @@ export default function Home() {
       <Srvices />
 
       {/* tab */}
-      {/* <div className="mt-4">
+      <div className="mt-4">
         <h4 className="text-center text-2xl lg:text-3xl font-medium">
           Innovation Meets Productivity
         </h4>
@@ -29,7 +29,7 @@ export default function Home() {
           Get Inclined with our various trading products and tools.
         </p>
         <ProductsTab />
-      </div> */}
+      </div>
       <GrainConsulting />
 
       {/* Navigate */}
