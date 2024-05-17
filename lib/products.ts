@@ -125,4 +125,58 @@ export default [
     image: "/quantum.jpg",
     link: "/quantum",
   },
+  {
+    id: 15,
+    title: "Crypto By Robinson AG",
+    about:
+      "Transform the crypto market’s well-chronicled volatility into a trading advantage with analytics that help you decide when to buy – and the time to get out. Track your crypto investments using our proprietary risk-management algorithm with customizable automatic alerts to tell you when it’s time to act.",
+    category: "crypto",
+    image: "/crypto.jpg",
+    link: "/quantum",
+  },
+  {
+    id: 16,
+    title: "Crypto Ideas by Robinson AG",
+    about:
+      "Capitalize on our four back-tested strategies for finding the best opportunities in crypto. Use Crypto Ideas by Robinson AG to track the health of the crypto market and use our screening tools to ID the best crypto opportunities at the optimal moment.",
+    category: "crypto",
+    image: "/crypto-ideas.jpg",
+    link: "/quantum",
+  },
+  {
+    id: 17,
+    title: "Trends by Robinson AG",
+    about:
+      "Our deceptively simple email delivers stock ideas to your inbox each week from our proven and back-tested strategies. It includes market analysis, stocks trending in our system and recent market news and analysis.",
+    category: "investing",
+    image: "/trends.jpg",
+    link: "/quantum",
+  },
+  {
+    id: 18,
+    title: "Robinson AG Decoder",
+    about:
+      "Robinson AG first newsletter advisory, Decoder uses a “go anywhere” approach to find money-making opportunities wherever they may be found. Led by Robinson AG Chief Research Officer Justice Clark Litle with daily market updates, Decoder seeks to show you the opportunity to make big investments for even bigger gains.",
+    category: "investing",
+    image: "/decoder.jpg",
+    link: "/quantum",
+  },
+  {
+    id: 19,
+    title: "Robinson AG Investment Report",
+    about:
+      "Robinson AG Investment Report helps readers growth their wealth by owning the best stocks in the most powerful trends sweeping our world and changing the way we live, work, and thrive. Jason Bodner uses his proprietary quantitative analysis system shown to beat the market 7-to-1 to identify these leaders with the strongest fundamentals, technicals, and Big Money inflows.",
+    category: "quants",
+    image: "/report.jpg",
+    link: "/quantum",
+  },
+  {
+    id: 20,
+    title: "Quantum Edge Pro",
+    about:
+      "Quantum Edge Pro uses quantitative analysis of the best stocks in the market to find the strongest performers – the best of the best – based on fundamental and technical analysis. For extra conviction, we also track Big Money movement on these stocks before the price moves up (or down) in a big way. We combine these quantifiable numbers and give you a proprietary Quantum Score to give you confidence in the investments we recommend.",
+    category: "quants",
+    image: "/quantum.jpg",
+    link: "/quantum",
+  },
 ];

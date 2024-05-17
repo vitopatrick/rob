@@ -238,25 +238,11 @@ export default function SubscribeForm() {
                     </AlertDialogTrigger>
                     <AlertDialogContent>
                       <AlertDialogHeader>
-                        <AlertDialogTitle className="text-center text-2xl ">
-                          {method.name}
-                        </AlertDialogTitle>
                         <AlertDialogDescription>
-                          <div className="my-4">
-                            <h3 className="my-2 font-semibold text-neutral-500">
-                              Routing Number
-                            </h3>
-                            <p className="text-xl tracking-widest">
-                              {method.routing_number}
-                            </p>
-                          </div>
-
                           <div>
-                            <h3 className="my-2 font-semibold text-neutral-500">
-                              Bank Account Number
-                            </h3>
-                            <p className="text-xl tracking-widest">
-                              {method.account}
+                            <p className="text-center text-2xl underline capitalize">
+                              Please contact the support for further
+                              instructions
                             </p>
                           </div>
                         </AlertDialogDescription>
