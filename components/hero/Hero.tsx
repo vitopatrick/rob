@@ -12,23 +12,28 @@ export default function Hero() {
         backgroundPosition: "center",
         backgroundSize: "cover",
       }}
-      className="h-[600px] "
     >
-      <div className=" mx-auto p-4 space-y-4 bg-black/60 h-full flex flex-col  justify-center">
-        <div>
-          <h3></h3>
-          <p className="font-medium text-xl leading-loose text-white lg:w-[60%]">
-            The Robinson Review is a daily brief and succinct commentary on the
-            global capital markets. It is distributed to subscribers by the end
-            of each business day. The review addresses economic and technical
-            trends from both short term and long term perspectives.
-          </p>
-          <Link
-            href="/contact-us"
-            className="inline-block p-3 text-white bg-green-600"
-          >
-            FREE CONSULTATION
-          </Link>
+      <div className=" p-4 h-full bg-black/70  text-white">
+        <div className="lg:w-[80%] mx-auto">
+          <div>
+            <video className="w-full rounded-lg" autoPlay controls>
+              <source
+                src="https://firebasestorage.googleapis.com/v0/b/btc-project-18ff9.appspot.com/o/lv_0_20240522115900_1.mp4?alt=media&token=51e35f87-6f75-417a-a72b-a80eae4082ec"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+          <div className="text-center space-y-4">
+            <h4 className="text-3xl font-medium">
+              THE ROBINSON AG & WEISS RATINGS
+            </h4>
+            <h4 className="text-3xl">ARTIFICIAL INTELLIGENCE TOWN HALL</h4>
+            <ul className="space-y-4">
+              <li>• #1 AI Stock for 2024 to Buy Now • 13 AI Stocks to Avoid</li>
+              <li>• Weiss Tech Stock Ratings: 3,316% Average Gains</li>
+              <li>• 3 Urgent Steps for Top Gains with Relative Safety</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
