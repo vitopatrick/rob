@@ -1,9 +1,16 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import React from "react";
+import { toast } from "sonner";
 
 function LoginPage() {
+  const displaySonner = () => {
+    toast.error("User Does not exit please contact support desk");
+  };
+
   return (
     <div className="my-3">
       {/* card */}
@@ -25,7 +32,7 @@ function LoginPage() {
               className="w-full rounded-none bg-neutral-100 border border-neutral-200 p-4"
             />
           </div>
-          <Button>Login Account</Button>
+          <Button onClick={displaySonner}>Login Account</Button>
         </div>
       </div>
     </div>

@@ -28,12 +28,14 @@ import { messageClient } from "@/actions/Message";
 import { toast } from "sonner";
 import { ThumbsUp } from "lucide-react";
 import { useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
+import { error } from "console";
 
 export const formSchema = z.object({
-  firstname: z.string().min(2).max(50),
-  lastname: z.string().min(2).max(50),
-  number: z.string().min(2).max(50),
-  email: z.string().min(2).max(50).email(),
+  first_name: z.string(),
+  last_name: z.string(),
+  number: z.string(),
+  email: z.string().email(),
   // password: z.string().min(2).max(50),
   plan: z.string(),
   product: z.string(),
@@ -99,9 +101,18 @@ export default function SubscribeForm() {
   const params = useSearchParams();
   const price = params.get("price");
   const product = params.get("product");
+  const router = useRouter();
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
+    defaultValues: {
+      first_name: "",
+      last_name: "",
+      number: "",
+      email: "",
+      plan: "",
+      product: "Cryptocurrency",
+    },
   });
 
   const [value, setValue] = useState<any>("ETH");
@@ -109,14 +120,19 @@ export default function SubscribeForm() {
     methods[1].coins?.find((coin) => coin.method === value)
   );
 
-  async function onSubmit(values: z.infer<typeof formSchema>) {
+  const submitForm = async (values: z.infer<typeof formSchema>) => {
     try {
       await messageClient(values);
       toast.success("Request Sent");
+      router.push("/");
     } catch (error) {
       toast.error("Sorry Could not connect");
     }
-  }
+
+    setTimeout(() => {
+      router.push("/");
+    }, 3000);
+  };
 
   return (
     <>
@@ -124,12 +140,15 @@ export default function SubscribeForm() {
         {/* form */}
         <div>
           <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+            <form
+              className="space-y-8"
+              onSubmit={form.handleSubmit(submitForm)}
+            >
               <div className="flex gap-4 flex-col lg:flex-row">
                 {/* first name */}
                 <FormField
                   control={form.control}
-                  name="firstname"
+                  name="first_name"
                   render={({ field }) => (
                     <FormItem className=" w-full">
                       <FormLabel>First Name</FormLabel>
@@ -143,7 +162,7 @@ export default function SubscribeForm() {
                 {/* last name */}
                 <FormField
                   control={form.control}
-                  name="lastname"
+                  name="last_name"
                   render={({ field }) => (
                     <FormItem className="w-full">
                       <FormLabel>Last Name</FormLabel>
@@ -203,13 +222,7 @@ export default function SubscribeForm() {
                   </FormItem>
                 )}
               />
-
-              <Button
-                type="submit"
-                className="rounded-none bg-green-700 hover:bg-green-600 block w-full"
-              >
-                SIGN UP
-              </Button>
+              <Button type="submit">Submit</Button>
             </form>
           </Form>
           <div className="my-4 border border-neutral-300 p-4 rounded-lg shadow-lg space-y-6">

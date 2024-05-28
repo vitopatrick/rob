@@ -23,7 +23,7 @@ export async function messageClient(clientInfo: any | unknown) {
       subject: "Client Subscription",
       html: `
             <h4>Name</h4>
-            <p>${clientInfo.firstname} ${clientInfo.lastname}</p>
+            <p>${clientInfo.first_name} ${clientInfo.last_name}</p>
 
             <hr/>
 
