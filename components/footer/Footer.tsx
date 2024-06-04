@@ -90,7 +90,7 @@ export default function Footer() {
       <div className="flex flex-col items-center justify-center bg-stone-700 p-4">
         {/* links */}
         <div className=" p-4 flex items-center flex-col justify-center">
-          <div className="space-x-4">
+          <div className="space-x-4 flex items-center">
             {links.map((link) => (
               <Link
                 href={link.path}
