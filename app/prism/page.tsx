@@ -7,7 +7,7 @@ const AdsPage = () => {
       <div>
         <video className="w-full rounded-lg" autoPlay controls>
           <source
-            src="https://firebasestorage.googleapis.com/v0/b/email-list-653cb.appspot.com/o/lv_0_20240604224408.mp4?alt=media&token=161b0f87-ca28-4c4a-978a-dabed9e0e29c"
+            src="https://firebasestorage.googleapis.com/v0/b/email-list-653cb.appspot.com/o/YouCut_20240605_020508789.mp4?alt=media&token=e7289381-1334-470d-9c1c-f5c271332260"
             type="video/mp4"
           />
         </video>
