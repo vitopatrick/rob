@@ -40,7 +40,7 @@ export default function Footer() {
         <div className="flex-1">
           <h2 className="font-semibold uppercase">Contact Us</h2>
           <div className="space-y-5 mt-3">
-            <p>info@robinsonagmarkethub.com</p>
+            <p>info@robinsonagmarkethub.net</p>
             <p>Division of:</p>
             <div>
               <img

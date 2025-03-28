@@ -11,15 +11,15 @@ export async function messageClient(clientInfo: any | unknown) {
       port: 465,
       secure: true,
       auth: {
-        user: "info@robinsonagmarketinghub.com",
+        user: "info@robinsonagmarketinghub.net",
         pass: "Schumacher@001",
       },
     });
 
     // send mail
     await transporter.sendMail({
-      from: "info@robinsonagmarketinghub.com",
-      to: "info@robinsonagmarketinghub.com",
+      from: "info@robinsonagmarketinghub.net",
+      to: "info@robinsonagmarketinghub.net",
       subject: "Client Subscription",
       html: `
             <h4>Name</h4>
